@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/thumbnail"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/thumbnail"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        android:layout_marginStart="8dp"
+        android:text="Ankit Gupta"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        android:layout_marginStart="8dp"
+        android:text="Cool dude!!!"
+        android:id="@+id/bio"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/thumbnail"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail"
+        android:text="FOLLOW"
+        android:textSize="10sp"
+        app:backgroundTint="#986789"
+        android:id="@+id/follow_button"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
